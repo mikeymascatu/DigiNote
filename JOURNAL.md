@@ -22,7 +22,7 @@ Pictures of the WiP Design:
 
   
 
-## 10/27/2025 - Finished CAD for all Frame Pieces!  
+## 10/27/2025 5 PM - Finished CAD for all Frame Pieces!  
 
 I worked on getting the rest of the frame designed, here's what got updated:
 
@@ -45,5 +45,13 @@ I worked on getting the rest of the frame designed, here's what got updated:
 
 and pictures!!
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjA2NiwicHVyIjoiYmxvYl9pZCJ9fQ==--a177c2f87894afd1ff9d005b54614aa7eeb6a601/image.png)
+  
+
+## 10/27/2025 7 PM - Designed input module PCB!  
+
+Quick update! Used EasyEDA and built a simple button PCB that interfaces with the compute PCB with a JST-SH connector. This module will have to hand-soldered since it's double sided (cries quietly) but it will be worth it!
+
+
+![Screenshot 2025-10-27 193432](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjA3NywicHVyIjoiYmxvYl9pZCJ9fQ==--acbbbb44de6939d400ca37d64ca2b7f81fee66e8/Screenshot%202025-10-27%20193432.png)
   
 
