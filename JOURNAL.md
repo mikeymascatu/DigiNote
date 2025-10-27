@@ -22,3 +22,28 @@ Pictures of the WiP Design:
 
   
 
+## 10/27/2025 - Finished CAD for all Frame Pieces!  
+
+I worked on getting the rest of the frame designed, here's what got updated:
+
+***Main Frame***
+
+- Mounting for the rest of the frame is done!
+- Thicker to allow all components to sit safely and securely
+- WIP to add cutout for USB-C
+
+***Sub Frame (NEW!)***
+- Mounting for the compute PCB
+- Safe, vented mounting for a 2500mAh Li-Po battery
+- Cutouts for input PCB and cables
+- Mounting for the rest of the frame
+- Cutouts for FPC cables from E-Ink carrier board
+
+***Rear Frame (NEW)***
+- It's really simple right now, but we're adding magnets soon!
+- WIP to hide the screws better
+
+and pictures!!
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjA2NiwicHVyIjoiYmxvYl9pZCJ9fQ==--a177c2f87894afd1ff9d005b54614aa7eeb6a601/image.png)
+  
+
