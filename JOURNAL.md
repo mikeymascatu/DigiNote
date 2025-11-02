@@ -55,3 +55,11 @@ Quick update! Used EasyEDA and built a simple button PCB that interfaces with th
 ![Screenshot 2025-10-27 193432](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjA3NywicHVyIjoiYmxvYl9pZCJ9fQ==--acbbbb44de6939d400ca37d64ca2b7f81fee66e8/Screenshot%202025-10-27%20193432.png)
   
 
+## 11/2/2025 - Finished Schematics for Compute Board!  
+
+Learned EasyEDA and built the schematic for the compute board for DigiNote! 
+The computer board features a TP4056 Battery Charger (+ Protections and Load Sharing), the connections to the Eink carrier board, and the input module!
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzkwOCwicHVyIjoiYmxvYl9pZCJ9fQ==--7964d7529bca790039d9d4ea289ad26fc20a4ad9/image.png)
+  
+
