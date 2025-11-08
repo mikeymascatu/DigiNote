@@ -63,3 +63,10 @@ The computer board features a TP4056 Battery Charger (+ Protections and Load Sha
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzkwOCwicHVyIjoiYmxvYl9pZCJ9fQ==--7964d7529bca790039d9d4ea289ad26fc20a4ad9/image.png)
   
 
+## 11/8/2025 - Basic Routing of Compute PCB Done  
+
+Finally finished routing most of the Compute PCB! Working on beefing up power traces and fixing silkscreen markings for the Pi Pico! Additional adjustments are needed for the subframe to accommodate the components.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTU1NywicHVyIjoiYmxvYl9pZCJ9fQ==--6bcd4b37e851b8977522328e573bea2b883b6fc3/image.png)
+  
+
