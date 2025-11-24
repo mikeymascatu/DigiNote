@@ -30,4 +30,20 @@ So there isn't a super dramatic reason why I decided to develop DigiNote, but it
 - All CAD is published in the CAD Folder
 - As for slicing the frame pieces, no special precautions are needed. Any 0.2mm profile will work. Supports are needed for the twist-lock system and for the main frame (if you have difficulties with overhangs), but otherwise not needed. PLA and PETG are recommended due to the necessity of heat-set inserts (you... really shouldn't be melting into ABS...). The 1mm spacers should be printed in TPU but should work with PLA.
 - Tolerances are relatively conservative but may need additional adjustment with wackier printers.
+- 
+# **Licensing**
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
+# **Credits**
+- Design
+  - The twist-lock design is a simplified, scaled-up version of DiAleksi's DiA Twist-Lock2 system, which can be found here: https://www.thingiverse.com/thing:3939555
 
