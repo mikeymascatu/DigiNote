@@ -27,10 +27,38 @@ So there isn't a super dramatic reason why I decided to develop DigiNote, but it
   - Want to add a stand? Magnets? Suction cups so you can stick it onto things like a real sticky note? You can install a twist lock as an alternative backplate and integrate DigiNote into your workspace! 
 
 # **CAD / 3D Printing**
-- All CAD is published in the CAD Folder
-- As for slicing the frame pieces, no special precautions are needed. Any 0.2mm profile will work. Supports are needed for the twist-lock system and for the main frame (if you have difficulties with overhangs), but otherwise not needed. PLA and PETG are recommended due to the necessity of heat-set inserts (you... really shouldn't be melting into ABS...). The 1mm spacers should be printed in TPU but should work with PLA.
+- All CAD is published in the CAD Folder and can also be found with this [OnShape Link](https://cad.onshape.com/documents/893b8b73b69c6c408c8c46a7/w/015301cca51da9b937812f68/e/7a999b807e0775ac3ee2c189?renderMode=0&uiState=6924d38be932135a37adc137)
+- As for slicing the frame pieces, no special precautions are needed. Any 0.2mm profile will work. Supports are needed for the twist-lock system and for the main frame (if you have difficulties with overhangs), but otherwise not needed. PLA and PETG are recommended due to the necessity of heat-set inserts (you... really shouldn't be melting into ABS...).
+- The 1mm spacers should be printed in TPU, but should work with PLA.
+- The twist-lock version of the DigiNote rear frame should be printed in 98A TPU or harder.
 - Tolerances are relatively conservative but may need additional adjustment with wackier printers.
-- 
+- The included soldering jig should be printed twice in a high-temperature filament (ideally ABS or better) to resist the heat of attaching a new Pi Pico
+# **PCBs/Ordering**
+<img width="908" height="143" alt="image" src="https://github.com/user-attachments/assets/8b7055cd-8b62-4956-ac24-cdb97f7f42f6" />
+<img width="759" height="941" alt="image" src="https://github.com/user-attachments/assets/2ee79d6b-035c-4ab7-8206-ef619326084a" />
+
+- The PCB Manufacturing / EasyEDA project files can be found in the PCBs folder. Schematics will also be included as PDFs.
+- The custom PCBs can be technically skipped in leiu of a properly protected TP4056 Battery charger module with load switching (and USB passthrough) and hand-soldering the wire0s to the Pi Pico, which can dramatically reduce the price to around ~$60-$80
+  - However, this makes assembly significantly more complex and may require modifing the sub-frame sigicantly.
+- Due to the size/design limitations of JLCPCB, the Input PCB does not qualifiy for PCBA and will require hand-soldering the buttons and the surface-mount JST connector (which may present a challenge for begineers).
+- Some switching in the BOM may be needed to reduce the need for JLC extended parts (which is not difficult at all)
+- The total cost I managed for all of the custom PCBs (5 Input PCBs, 2 PCBA Mainboards, 3 Blank Mainboard PCBs) was $54.38 (with some coupons).
+- Here is a picture of my JLC cart if you need a refrence:
+- <img width="1710" height="857" alt="image" src="https://github.com/user-attachments/assets/2ca09cef-9ce3-4a11-83cb-b63bb4a7547d" />
+
+# **Assembly**
+- Assembly instructions are pretty limited but putting together DigiNote is releatively easy and requires minimal tools (Soldering Iron, H2.0 Screwdriver, foam tape, doubled-sided tape, ect).
+- A proper assembly manual will be made after DigiNote's first prototype is verified to work. However, the CAD offers a great insight in how the device should be assembled. Here's the general steps:
+  - Insert the M3 Heatset inserts on the mainframe and subframe.
+  - Insert the FFC cable into the e-Ink module and insert the PCB into the mainframe (it should click into place).
+  - Attach some foam tape on the back of the PCB to ensure the components don't move around.
+  - Attach the input PCB and screw it into the mainframe (with the spacers inbetween the screws and the PCB). Ensure the buttons are sticking out on the other side.
+  - Place the subframe on top of the main frame, screwing in the 2 8mm M3 screws towards the bottom. Make sure the FFC cable is routed through the cutout on the top of the subframe
+  - Lay 4 spacers on the corresponding to the Mainboard PCB screwholes on the subframe. Attach the Mainboard with 4 6mm M3 screws.
+  - Plug in the FFC cable into the ZIF connector of the Mainboard
+  - Adhere the LiPo battery in the designated slot of the subframe, ensuring the cables are towards the top-left of the slot. DO NOT PLUG IN THE BATTERY JUST YET!!
+  - Connect the input 
+
 # **Licensing**
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
