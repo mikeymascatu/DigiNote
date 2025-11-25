@@ -54,10 +54,14 @@ So there isn't a super dramatic reason why I decided to develop DigiNote, but it
   - Attach some foam tape on the back of the PCB to ensure the components don't move around.
   - Attach the input PCB and screw it into the mainframe (with the spacers inbetween the screws and the PCB). Ensure the buttons are sticking out on the other side.
   - Place the subframe on top of the main frame, screwing in the 2 8mm M3 screws towards the bottom. Make sure the FFC cable is routed through the cutout on the top of the subframe
+  - Lay the 2 soldering jigs underneath the smaller, more central holes of the Mainboard PCB (the pegs of the jigs should stick out on the top). Lay the Pi Pico on top of the pegs so that it is flush with the mainboard.
+  - Prepare the contacts of the Pi Pico and the Mainboard PCB and bridge the each corresponding set of pads by soldering them. Remove the jigs when finished.
   - Lay 4 spacers on the corresponding to the Mainboard PCB screwholes on the subframe. Attach the Mainboard with 4 6mm M3 screws.
   - Plug in the FFC cable into the ZIF connector of the Mainboard
   - Adhere the LiPo battery in the designated slot of the subframe, ensuring the cables are towards the top-left of the slot. DO NOT PLUG IN THE BATTERY JUST YET!!
-  - Connect the input 
+  - Connect the Input PCB and Mainboard PCB together with a 4-pin JST SH cable (>30mm).
+  - Plug in the battery cable to the JST PH connector on the Mainboard
+  - Insert the rear frame and screw the final 
 
 # **Licensing**
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
