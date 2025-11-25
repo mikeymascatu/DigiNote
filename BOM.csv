@@ -1,0 +1,30 @@
+Item Description,Manufactuer ,Model,Unit Price,Quantity,Price,Source,Link/LCSC Part #
+PCBS,Custom (JLC),N/A,54.38,1,54.38,JLCPCB,
+Capacitor (10uF),SAMSUNG,CL21A106KAYNNNE,0.0196,1,N/A,LCSC,C15850
+Capacitor (100nF),SAMSUNG,CL21B104KCFNNNE,0.0292,2,N/A,LCSC,C28233
+JST SH Connector,JST,BM04B-SRSS-TB(LF)(SN),0.0309,2,N/A,LCSC,C160390
+FFC Connector,JS(钜硕电子),AFA01-S08FCA-00,0.0186,1,N/A,LCSC,C262755
+Red LED,HUBEI KENTO,KT-0603R,0.0112,1,N/A,LCSC,C965799
+Mosfet (3.7V Battery),TECH PUBLIC(台舟),FS8205A,0.0074,1,N/A,LCSC,C2830320
+Mosfet (5V USB),DIODES(美台),DMP1045UQ-7,0.0249,1,N/A,LCSC,C706746
+Resistor (5.1k),UNI-ROYAL(厚声),0402WGF5101TCE,0.0001,1,N/A,LCSC,C25905
+Resistor (2k),UNI-ROYAL(厚声),0603WAF2001T5E,0.0002,1,N/A,LCSC,C22975
+Resistor (300m),UNI-ROYAL(厚声),0603WAF300LT5E,0.0006,1,N/A,LCSC,C247136
+Resistor (1k),UNI-ROYAL(厚声),0603WAF1001T5E,0.0002,3,N/A,LCSC,C21190
+Resistor (100),UNI-ROYAL(厚声),0603WAF1000T5E,0.0002,1,N/A,LCSC,C22775
+Resistor (10k),UNI-ROYAL(厚声),0603WAF1002T5E,0.0002,1,N/A,LCSC,C25804
+Battery Charging IC,GOODWORK(固得沃克),TP4056,0.0064,1,N/A,LCSC,C21713961
+Battery Protection IC,KUU,DW01A,0.0032,1,N/A,LCSC,C42459937
+Green LED,YONGYUTAI(永裕泰),YLED0603G,0.0008,1,N/A,LCSC,C19273151
+Schottky Diode,FUXINSEMI(富芯森美),MBR0520L,0.003,1,N/A,LCSC,C5563735
+JST PH Connector,JST,S2B-PH-K-S(LF)(SN),0.0048,1,N/A,LCSC,C173752
+USB C Connector,SHOU HAN(首韩),TYPE-C16PIN,0.0092,1,N/A,LCSC,C393939
+E-ink Panel,BuyDisplay,"Red 4.2"" e-Ink Display Module",18.41,1,18.41,BuyDisplay,https://www.buydisplay.com/red-4-2-inch-e-ink-display-module-400x300-for-arduino-raspberry-pi
+LiPo Battery,PKCELL,3.7v 2500mAh Li-Po Battery,14.95,1,14.95,Microcenter,https://www.microcenter.com/product/454401/adafruit-industries-lithium-ion-polymer-battery-37v-2500mah
+MCU,Raspberry Pi,Raspberry Pi Pico 2W (no headers),6,1,6,Microcenter,https://www.microcenter.com/product/687384/raspberry-pi-pico-2-w
+Input Cable,Adafruit,5cm JST-SH Cable,1.45,1,1.45,Microcenter,https://www.microcenter.com/product/618252/adafruit-industries-stemma-qt-qwiic-jst-sh-4-pin-cable-50mm-long
+M3 Inserts,Adafruit,M3x3mm Brass Heat-Set Inserts,0.119,50,5.95,Microcenter,https://www.microcenter.com/product/623330/adafruit-industries-3x3mm-heat-set-inserts-50-pack
+M3 Screws,MYWISH,550pcs BHCS M3 Screw Kit,7.99,1,7.99,Amazon,www.amazon.com/Mywish-Assortment-Stainless-Washers-Wrenche/dp/B0CQQS6STL/ref=sr_1_1_sspa?crid=U4V3133V3EGJ&dib=eyJ2IjoiMSJ9.DQc6yTqshdKbuxR8ysMkhT9WvrNsI0xNhJxqJ59njrtgeeZ-WSWa187EtoPqPdim03bAuPMB_AWKQepYbgGfDb8yoJaXbucH4d-fEC7tmlkRLYHAobVdFWspoUy3UCJxkOhFkMSkEC-ZYfw8JPo3fus6w5bZYNaD4CqEcMnhxMMpIxDwqtjrO00QI-6CUZsuRWR7wpjcP_TjFZ429I6WAYnQgf7xx6NlxBPfY4QrpRc.xQHYj_JFYFv4HiT9v0sTW2B9ACpbP92CnMj9V22aZKY&dib_tag=se&keywords=mywish+M3+screw+kit&qid=1763921913&sprefix=mywish+m3+screw+kit%2Caps%2C66&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
+Shipping Fees,,Shipping from BuyDisplay (USPS),9.41,1,9.41,,
+Shipping Fees,,Shipping from JLC (USPS),12.62,1,12.62,,
+,,,,FINAL COST,131.16,,
