@@ -65,6 +65,8 @@ So there isn't a super dramatic reason why I decided to develop DigiNote, but it
   - Plug in your DigiNote with a USB-C Cable to a computer and flash your desired firmware!
 
 # **Bill Of Materials**
+- **Note for Blueprint Reviewers, the BOM in the repo is the one I'll be using since it represents the complete costs of building a prototype (predominantly shipping), the one listed below is how much it will cost someone else to recreate the final product. Thanks!**
+
 | Description | Suggested Manufacturer | Suggested Model | Unit Price | Minimum Quantity | Seller | Link/LCSC Part # |
 | -------- | ------- | -------- | ------- | ------- | -------- | ------- |
 | PCBs | JLCPCB | Check out PCBs Folder | $54.38 | 1 Order | JLCPCB | https://jlcpcb.com |
