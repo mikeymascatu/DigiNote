@@ -38,33 +38,69 @@ So there isn't a super dramatic reason why I decided to develop DigiNote, but it
 <img width="759" height="941" alt="image" src="https://github.com/user-attachments/assets/2ee79d6b-035c-4ab7-8206-ef619326084a" />
 
 - The PCB Manufacturing / EasyEDA project files can be found in the PCBs folder. Schematics will also be included as PDFs.
-- The custom PCBs can be technically skipped in leiu of a properly protected TP4056 Battery charger module with load switching (and USB passthrough) and hand-soldering the wire0s to the Pi Pico, which can dramatically reduce the price to around ~$60-$80
-  - However, this makes assembly significantly more complex and may require modifing the sub-frame sigicantly.
-- Due to the size/design limitations of JLCPCB, the Input PCB does not qualifiy for PCBA and will require hand-soldering the buttons and the surface-mount JST connector (which may present a challenge for begineers).
+- The custom PCBs can be technically skipped for a properly protected TP4056 Battery charger module with load switching (and USB passthrough) and hand-soldering the wires to the Pi Pico, which can dramatically reduce the price to around ~$60-$80. 
+  - However, this makes assembly significantly more complex and may require modifying the sub-frame significantly.
+- Due to the size/design limitations of JLCPCB, the Input PCB does not qualify for PCBA and will require hand-soldering the buttons and the surface-mount JST connector (which may present a challenge for beginners).
 - Some switching in the BOM may be needed to reduce the need for JLC extended parts (which is not difficult at all)
 - The total cost I managed for all of the custom PCBs (5 Input PCBs, 2 PCBA Mainboards, 3 Blank Mainboard PCBs) was $54.38 (with some coupons).
-- Here is a picture of my JLC cart if you need a refrence:
+- Here is a picture of my JLC cart if you need a reference:
 - <img width="1710" height="857" alt="image" src="https://github.com/user-attachments/assets/2ca09cef-9ce3-4a11-83cb-b63bb4a7547d" />
 
 # **Assembly**
-- Assembly instructions are pretty limited but putting together DigiNote is releatively easy and requires minimal tools (Soldering Iron, H2.0 Screwdriver, foam tape, doubled-sided tape, ect).
-- A proper assembly manual will be made after DigiNote's first prototype is verified to work. However, the CAD offers a great insight in how the device should be assembled. Here's the general steps:
+- Assembly instructions are pretty limited, but putting together DigiNote is relatively easy and requires minimal tools (Soldering Iron, H2.0 Screwdriver, foam tape, doubled-sided tape, ect).
+- A proper assembly manual will be made after DigiNote's prototype is verified to work. However, the CAD offers a great insight in how the device should be assembled. Here's the general steps:
   - Insert the M3 Heatset inserts on the mainframe and subframe.
   - Insert the FFC cable into the e-Ink module and insert the PCB into the mainframe (it should click into place).
   - Attach some foam tape on the back of the PCB to ensure the components don't move around.
-  - Attach the input PCB and screw it into the mainframe (with the spacers inbetween the screws and the PCB). Ensure the buttons are sticking out on the other side.
+  - Attach the input PCB and screw it into the mainframe (with the spacers in between the screws and the PCB). Ensure the buttons are sticking out on the other side.
   - Place the subframe on top of the main frame, screwing in the 2 8mm M3 screws towards the bottom. Make sure the FFC cable is routed through the cutout on the top of the subframe
   - Lay the 2 soldering jigs underneath the smaller, more central holes of the Mainboard PCB (the pegs of the jigs should stick out on the top). Lay the Pi Pico on top of the pegs so that it is flush with the mainboard.
-  - Prepare the contacts of the Pi Pico and the Mainboard PCB and bridge the each corresponding set of pads by soldering them. Remove the jigs when finished.
-  - Lay 4 spacers on the corresponding to the Mainboard PCB screwholes on the subframe. Attach the Mainboard with 4 6mm M3 screws.
+  - Prepare the contacts of the Pi Pico and the Mainboard PCB, and bridge each corresponding set of pads by soldering them. Remove the jigs when finished.
+  - Lay 4 spacers on the corresponding Mainboard PCB screwholes on the subframe. Attach the Mainboard with 4 6mm M3 screws.
   - Plug in the FFC cable into the ZIF connector of the Mainboard
   - Adhere the LiPo battery in the designated slot of the subframe, ensuring the cables are towards the top-left of the slot. DO NOT PLUG IN THE BATTERY JUST YET!!
-  - Connect the Input PCB and Mainboard PCB together with a 4-pin JST SH cable (>30mm).
+  - Connect the Input PCB and Mainboard PCB with a 4-pin JST SH cable (>30mm).
   - Plug in the battery cable to the JST PH connector on the Mainboard
-  - Insert the rear frame and screw the final 
+  - Insert the rear frame and screw the final 4 6mm M3 screws.
+  - Plug in your DigiNote with a USB-C Cable to a computer and flash your desired firmware!
+
+# **Bill Of Materials**
+| Description | Suggested Manufacturer | Suggested Model | Unit Price | Minimum Quantity | Seller | Link/LCSC Part # |
+| -------- | ------- | -------- | ------- | ------- | -------- | ------- |
+| PCBs | JLCPCB | Check out PCBs Folder | $54.38 | 1 Order | JLCPCB | https://jlcpcb.com |
+| Capacitor (10uF) | Samsung Electronics | CL21A106KAYNNNE | $0.0196 | 1 | LCSC | C15850 |
+| Capacitor (100nF) | Samsung Electronics | CL21B104KCFNNNE | $0.0292 | 2 | LCSC | C28233 |
+| JST SH Connector | JST | BM04B-SRSS-TB(LF)(SN) | $0.0309| 2 | LCSC | C160390 |
+| JST PH Connector | JST | S2B-PH-K-S(LF)(SN) | $0.0048| 1 | LCSC | C173752 |
+| FFC Connector | JS | AFA01-S08FCA-00 | $0.0186 | 1 | LCSC | C262755 |
+| Red LED | Hubei Kento Electronics | KT-0603R | $0.0112 | 1 | LCSC | C2830320 |
+| Green LED | YONGYUTAI | YLED0603G | $0.0008 | 1 | LCSC | C19273151 |
+| Mosfet (3.7V Circuit) | TECH REPUBLIC | FS8205A | $0.0074 | 1 | LCSC | C2830320 |
+| Mosfet (5V Circuit) | DIODES | DMP1045UQ-7 | $0.0249 | 1 | LCSC | C706746 |
+| Resistor (10kΩ) | Uni-Royal | 0603WAF1002T5E | $0.0002 | 1 | LCSC | C25804 |
+| Resistor (5.1kΩ) | Uni-Royal | 0402WGF5101TCE | $0.0001 | 1 | LCSC | C25905 |
+| Resistor (2kΩ) | Uni-Royal | 0603WAF2001T5E | $0.0002 | 1 | LCSC | C22975 |
+| Resistor (1kΩ) | Uni-Royal | 0603WAF1001T5E | $0.0002 | 3 | LCSC | C21190 |
+| Resistor (100Ω) | Uni-Royal | 0603WAF1000T5E | $0.0002 | 1 | LCSC | C22775 |
+| Resistor (300mΩ) | Uni-Royal | 0603WAF300LT5E | $0.0006 | 1 | LCSC | C247136 |
+| Battery Charge IC | GOODWORK | TP4056 | $0.0064 | 1 | LCSC | C21713961 |
+| Battery Protection IC | KUU | DW01A | $0.0032 | 1 | LCSC | C42459937 |
+| Schottky Diode | FUXINSEMI | MBR0520L | $0.003 | 1 | LCSC | C5563735 |
+| USB-C Port | SHOU HAN | TYPE-C16PIN | $0.0092 | 1 | LCSC | C393939 |
+| e-Ink Module | BuyDisplay | ER-EPD042A1-1R-5074 | $18.41 | 1 | BuyDisplay | https://www.buydisplay.com/red-4-2-inch-e-ink-display-module-400x300-for-arduino-raspberry-pi |
+| Li-Po Battery | PKCELL | LIPO785060 | $14.95 | 1 | Adafruit | https://www.adafruit.com/product/328 |
+| MCU | Raspberry Pi | Pico 2W (Headerless) | $7.00 | 1 | Adafruit | https://www.adafruit.com/product/6087 |
+| Buttons | Omron | B3F-100 | $0.125 | 3 | Adafruit | https://www.adafruit.com/product/367 |
+| M3 Inserts | Adafruit | M3x3mm Brass Heat-set Inserts | $0.119 | 10 | Adafruit | https://www.adafruit.com/product/4256 |
+| M3 Screws | Any Brand | BHCS M3x6mm | ~$0.015 | 10 | Any Seller | N/A |
+| M3 Screws | Any Brand | BHCS M3x8mm | ~$0.015 | 2 | Any Seller | N/A |
+| Foam Weatherstrip | Any Brand | Nonconductive with <3/16" thickness | ~$2.93 | 1 Roll | Any Seller | N/A |
+
+# **Software**
+- coming soon!
 
 # **Licensing**
-Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+[![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
