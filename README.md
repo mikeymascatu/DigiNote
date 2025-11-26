@@ -2,11 +2,11 @@
 
 # **Description**
 
-DigiNote is a portable, distraction-free, WiFi-connected digital sticky note that integrates your calendars, agendas, to-do lists, and other desk activities into a single package. DigiNote is powered by a Rapsberry Pi Pico 2W and a tri-color E-ink display, allowing for a power-efficient, sustainable alternative to both digital and physical methods of organizing your life! DigiNote is also extremely modular and entirely open source, so the platform is open to any customization. Want to make an album art display? An alarm clock? DigiNote is a versatile tool that can be taken far from its original software to be whatever you need it to be!
+DigiNote is a portable, distraction-free, WiFi-connected digital sticky note that integrates your calendars, agendas, to-do lists, and other desk activities into a single package. DigiNote is powered by a Raspberry Pi Pico 2W and a tri-color E-ink display, offering a power-efficient, sustainable alternative to both digital and physical methods for organizing your life! DigiNote is also extremely modular and entirely open source, so the platform is open to any customization. Want to make an album art display? An alarm clock? DigiNote is a versatile tool that can be taken far from its original software to be whatever you need it to be!
 
 # **Backstory**
 
-So there isn't a super dramatic reason why I decided to develop DigiNote, but it boils down to the fact that sticky notes really annoy me. They are single-use, they clutter spaces, don't integrate into an increasingly digital workflow, they use a ton of paper over time, and the adhesives on most make them difficult to recycle. I wanted to make a solution that, while relatively expensive, keeps the single-purpose idea of sticky notes (especially as phones have become hazards to productivity) in a sleek package that eliminates the clutter of traditional paper. The addition of a standard Raspberry Pi Pico 2W makes it future-proof for more intensive firmwares and makes MCU upgrades relatively easy. 
+So there isn't a super dramatic reason I decided to develop DigiNote, but it boils down to sticky notes really annoying me. They are single-use, they clutter spaces, don't integrate into an increasingly digital workflow, use a ton of paper over time, and the adhesives on most make them difficult to recycle. I wanted to make a solution that, while relatively expensive, keeps the single-purpose idea of sticky notes (especially as phones have become hazards to productivity) in a sleek package that eliminates the clutter of traditional paper. The addition of a standard Raspberry Pi Pico 2W makes it future-proof for more intensive firmwares and makes MCU upgrades relatively easy. 
 
 # **Features**
 - Compatible with headerless Raspberry Pi Pico Models
@@ -99,7 +99,24 @@ So there isn't a super dramatic reason why I decided to develop DigiNote, but it
 | Foam Weatherstrip | Any Brand | Nonconductive with <3/16" thickness | ~$2.93 | 1 Roll | Any Seller | N/A |
 
 # **Software**
-- coming soon!
+- Since the eventual software behind DigiNote is so astronomically complex, the firmware included here is a drastically simplified test script that verifies the functionality of the e-Ink display.
+- ## Installation for Official DigiNote Firmware
+  -  Install Ardunio IDE 2.0 or newer
+  - Add the Pi Pico 2W in Additional Board Manager URLs (or in the boards tab of the IDE, which also installs the proper BLE libraries).
+  ```
+  https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
+
+  ```
+  - Install the following Arduino Libraries
+     - WiFi: WiFi framework for future firmware
+     - The e-Ink libraries in the Firmware folder of this repo (this will need to be imported into Arduino IDE)
+     - The remaining libraries should have been handled by the Arduino-Pico library installed when adding the board
+  - Download and open the DigiNote_TEST-FIRMWARE.ino file from the repo.
+  - Open it in Arduino IDE
+  - Plug in DigiNote and select "Raspberry Pi Pico 2W" in the proper serial port.
+       - If installing this for the first time (especially after other firmware), remove the rear panel and press the hold BOOTSEL on the Pi Pico before plugging in DigiNote
+  - Compile and flash the respective firmware.
+  - And have fun!
 
 # **Licensing**
 [![CC BY 4.0][cc-by-shield]][cc-by]
@@ -114,6 +131,12 @@ This work is licensed under a
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
 # **Credits**
-- Design
+- Design:
   - The twist-lock design is a simplified, scaled-up version of DiAleksi's DiA Twist-Lock2 system, which can be found here: https://www.thingiverse.com/thing:3939555
+  - The Pi Pico W model was provided by Ali Fatih Demir on GrabCAD, which can be found here: https://grabcad.com/library/raspberry-pi-pico-w-1
+  - The Pi Pico EasyEDA footprint was based on a footprint provided by a contributor of the EasyEDA component library, which can be found here: https://easyeda.com/component/042278cb55f64aea99270f7684de3766
+  - The remaining PCB component models are from LCSC.
+- Software:
+  - The test script was based on libraries written by EastRising Technology Co. LTD
+
 
