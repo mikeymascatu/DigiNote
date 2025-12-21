@@ -1,5 +1,8 @@
 <img width="2932" height="1024" alt="PLA, PETG, TPU" src="https://github.com/user-attachments/assets/c87709fc-4d47-4ae8-b2c9-4afb21187af6" />
 
+# **UPDATE 12/21: IMPORTANT INFORMATION**
+### Issues have been found in the current design revision, which can result in damage to the electronics. Please DO NOT continue with this version unless you are prepared to face the risks!
+
 # **Description**
 
 DigiNote is a portable, distraction-free, WiFi-connected digital sticky note that integrates your calendars, agendas, to-do lists, and other desk activities into a single package. DigiNote is powered by a Raspberry Pi Pico 2W and a tri-color E-ink display, offering a power-efficient, sustainable alternative to both digital and physical methods for organizing your life! DigiNote is also extremely modular and entirely open source, so the platform is open to any customization. Want to make an album art display? An alarm clock? DigiNote is a versatile tool that can be taken far from its original software to be whatever you need it to be!
@@ -37,10 +40,11 @@ So there isn't a super dramatic reason I decided to develop DigiNote, but it boi
 <img width="908" height="143" alt="image" src="https://github.com/user-attachments/assets/8b7055cd-8b62-4956-ac24-cdb97f7f42f6" />
 <img width="759" height="941" alt="image" src="https://github.com/user-attachments/assets/2ee79d6b-035c-4ab7-8206-ef619326084a" />
 
+- **Update 12/21: in the US, PCBWay offers a comparably better value than JLCPCB for this project, costing roughly $70 (including tariffs) with coupons and DHL shipping**
 - The PCB Manufacturing / EasyEDA project files can be found in the PCBs folder. Schematics will also be included as PDFs.
 - The custom PCBs can be technically skipped for a properly protected TP4056 Battery charger module with load switching (and USB passthrough) and hand-soldering the wires to the Pi Pico, which can dramatically reduce the price to around ~$60-$80. 
   - However, this makes assembly significantly more complex and may require modifying the sub-frame significantly.
-- Due to the size/design limitations of JLCPCB, the Input PCB does not qualify for PCBA and will require hand-soldering the buttons and the surface-mount JST connector (which may present a challenge for beginners).
+- Due to the size/design limitations of JLCPCB, the Input PCB does not qualify for PCBA and will require hand-soldering the board together!
 - Some switching in the BOM may be needed to reduce the need for JLC extended parts (which is not difficult at all)
 - The total cost I managed for all of the custom PCBs (5 Input PCBs, 2 PCBA Mainboards, 3 Blank Mainboard PCBs) was $54.38 (with some coupons).
 - Here is a picture of my JLC cart if you need a reference:
